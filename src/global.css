@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* Colores Principales */
+    --primary-color: #660000;
+    --secundary-color: #8C001A;
+    --background-color: #E0E0E0;
+}
+
 body {
+    background-color: #E0E0E0;
     font-family: 'Poppins', sans-serif;
 }
 
