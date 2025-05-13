@@ -9,11 +9,14 @@
     --primary-color: #660000;
     --secundary-color: #8C001A;
     --background-color: #E0E0E0;
+    
+    /* Fuente */
+    --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     background-color: #E0E0E0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-geist);
 }
 
 main {

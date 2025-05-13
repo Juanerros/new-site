@@ -6,6 +6,10 @@ header {
     background-color: #f2f2f2;
 }
 
+a:hover {
+    color: var(--primary-color);
+}
+
 nav {
     display: flex;
     gap: 15px;
@@ -14,4 +18,66 @@ nav {
 nav a {
     text-decoration: none;
     color: #333;
+    font-size: 2.3vh;
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2vh;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.btn-menu,
+.menu {
+    display: none;
+}
+
+@media (max-width: 920px) {
+    nav {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .btn-menu span {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+    }
+
+    .menu {
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu a {
+        font-size: 2.5vh;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .menu a:hover {
+        color: var(--primary-color);
+    }
 }
