@@ -16,6 +16,7 @@ export default function Header() {
                 <Link to="/">Inicio</Link>
 
                 {/* Quizas podemos poner que sea un lista desplegable */}
+                {/* quizas... en celu si o si. */}
                 <Link to="/cursos">Cursos</Link>
                 <Link to="/biblioteca">Biblioteca</Link>
                 <Link to="/olimpiadas">Olimpiadas</Link>
