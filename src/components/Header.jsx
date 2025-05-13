@@ -10,7 +10,7 @@ export default function Header() {
         <header>
             <Link to="/" className='logo'>
                 <img src={Logo} alt="Logo" />
-                <h1>E.E.S.T. N°1</h1>
+                <h1>EEST N°1</h1>
             </Link>
             <nav>
                 <Link to="/">Inicio</Link>

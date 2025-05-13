@@ -61,7 +61,7 @@
 
 .tecnicaturas { 
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .box {
@@ -71,12 +71,15 @@
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    width: 500px;
+    width: 380px;
     height: auto;
     background-color: whitesmoke;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
     transition: .4s;
+}
+.box h2{
+    font-size: 22px;
 }
 .box p{
     color: rgb(140, 140, 140);
@@ -105,7 +108,7 @@
     display: flex;
     align-items: center;
     margin-top: 12px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: rgb(100, 100, 100);
 }
@@ -125,4 +128,26 @@
 }
 .btn-tecnicaturas:hover {
     transform: scale(.98); 
+}
+
+/* Responsive */
+
+@media (max-width: 920px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tecnicaturas {
+        flex-direction: column;
+        align-items: center;
+    }
 }
