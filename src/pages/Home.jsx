@@ -1,4 +1,7 @@
 import './css/home.css';
+import { FaCode } from "react-icons/fa6";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -21,24 +24,30 @@ export default function Home() {
       <div className='section'>
         <div className='tecnicaturas'>
           <div className='box'>
-            <h2>Tecnicatura en Programación</h2>
+            <div className='title'>
+              <div className='icon'><FaCode size={30} /></div>
+              <h2>Tecnicatura en Programación</h2>
+            </div>
             <p>Desarrollo de software y aplicaciones</p>
             <div className='lista'>
-              <h4>Programacion orientada a objetos</h4>
-              <h4>Desarrollo web full-stack</h4>
-              <h4>Bases de datos y SQL</h4>
-              <h4>Desarrollo de aplicaciones moviles</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Programacion orientada a objetos</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Desarrollo web full-stack</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Bases de datos y SQL</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Desarrollo de aplicaciones moviles</h4>
             </div>
             <input type="button" value="Cursos" className='btn-tecnicaturas' />
           </div>
           <div className='box'>
-            <h2>Tecnicatura en Informática</h2>
+            <div className='title'>
+              <div className='icon'><HiOutlineDesktopComputer size={30} /></div>
+              <h2>Tecnicatura en Informática</h2>
+            </div>
             <p>Gestión de sistemas y redes</p>
             <div className='lista'>
-              <h4>Administración de sistemas operativos</h4>
-              <h4>Redes y seguridad informática</h4>
-              <h4>Virtualización y cloud computing</h4>
-              <h4>Soporte técnico y mantenimiento</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Administración de sistemas operativos</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Redes y seguridad informática</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Virtualización y cloud computing</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Soporte técnico y mantenimiento</h4>
             </div>
             <input type="button" value="Cursos" className='btn-tecnicaturas' />
           </div>
