@@ -6,8 +6,8 @@
 
 :root{
     /* Colores Principales */
-    --primary-color: #660000;
-    --secundary-color: #8C001A;
+    --primary-color: #800000;
+    --secundary-color: #a00000;
     --background-color: #E0E0E0;
     
     /* Fuente */
@@ -21,7 +21,7 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
