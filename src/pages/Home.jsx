@@ -31,10 +31,10 @@ export default function Home() {
             </div>
             <p>Conocimiento básico del uso de herramientas</p>
             <div className='lista'>
-              <h4><div className='icon'><IoIosArrowForward /></div>Administración de sistemas operativos</h4>
-              <h4><div className='icon'><IoIosArrowForward /></div>Redes y seguridad informática</h4>
-              <h4><div className='icon'><IoIosArrowForward /></div>Virtualización y cloud computing</h4>
-              <h4><div className='icon'><IoIosArrowForward /></div>Soporte técnico y mantenimiento</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Aprendimiento de herramientas</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Planificación y acción</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Dibujo tecnico y caligrafia</h4>
+              <h4><div className='icon'><IoIosArrowForward /></div>Uso de madera y metales</h4>
             </div>
             <input type="button" value="Cursos" className='btn-tecnicaturas' />
           </div>

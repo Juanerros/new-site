@@ -119,7 +119,7 @@
     background-color: var(--primary-color);
     color: whitesmoke;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 400;
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -127,7 +127,7 @@
     transition: .3s;
 }
 .btn-tecnicaturas:hover {
-    transform: scale(.98); 
+    transform: scale(1.02); 
 }
 
 /* Responsive */
