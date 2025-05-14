@@ -30,6 +30,7 @@ main {
     align-items: center;
     min-height: 100vh;
     margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 a {

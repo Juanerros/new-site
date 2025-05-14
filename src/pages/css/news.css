@@ -25,10 +25,10 @@
     grid-gap: 20px;
     margin-right: auto;
     margin-left: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
-.activitys article {
+ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -39,20 +39,20 @@
     transition: 0.3s;
 }
 
-.activitys article h3 {
+ article h3 {
     min-height: 40px;
 }
 
-.activitys article:hover {
+ article:hover {
     transform: translateY(-5px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.activitys article p {
-    margin: 10px 0;
+ article p {
     color: var(--font-light);
 }
 
-.activitys article a {
+ article a {
     text-align: center;
     cursor: pointer;
     padding: 8px 22px;
@@ -65,7 +65,7 @@
     transition: .3s;
 }
 
-.activitys article a:hover {
+ article a:hover {
     background-color: var(--primary-color);
     color: whitesmoke;
 }
@@ -76,12 +76,20 @@
     background-color: var(--secundary-color);
 }
 
-.activitys-title {
+.title {
     font-size: 30px;
     align-self: center;
     border-bottom: 2px solid var(--primary-color);
     padding: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
+
+.conectar {
+    margin-top: 10px;
+    width: 50%;
+}
+
 
 @media (max-width: 768px) {
     .activitys {

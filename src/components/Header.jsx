@@ -8,16 +8,20 @@ export default function Header() {
     
     const toggleMenu = () => {
         const menu = document.querySelector('.menu');
+        const btnMenu = document.querySelector('.btn-menu');
         
         if (!menuActive) {
             menu.classList.add('menu-active');
+            btnMenu.classList.add('btn-menu-active');
             setMenuActive(true);
         } else {
             menu.classList.add('menu-closing');
             menu.classList.remove('menu-active');
-            
+            btnMenu.classList.remove('btn-menu-active');
+
             setTimeout(() => {
                 menu.classList.remove('menu-closing');
+                btnMenu.classList.remove('btn-menu-active');
                 setMenuActive(false);
             }, 500);
         }
