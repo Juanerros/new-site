@@ -59,6 +59,8 @@ nav a:hover::after {
 
 .logo img {
     height: 50px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
 }
 
 .btn-menu,
@@ -77,10 +79,6 @@ nav a:hover::after {
         gap: 5px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
-    }
-
-    .btn-menu:hover  {
-        opacity: 0.7;
     }
 
     .btn-menu span {

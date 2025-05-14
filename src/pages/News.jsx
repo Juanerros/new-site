@@ -1,12 +1,14 @@
 import './css/news.css';
+import Hero from '../components/Hero';
 
 export default function News() {
   return (
     <>
-      <div className="hero">
+      <Hero imageUrl="../assets/imgs/plano-derecho.jpg">
         <h2>Novedades</h2>
         <p>Nuestras novedades</p>
-      </div>
+      </Hero>
+      
       <h2 className='title'>Actividades</h2>
       <div className="activitys">
         <article>

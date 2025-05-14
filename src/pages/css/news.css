@@ -1,5 +1,9 @@
-.hero {
-    background-color: brown;
+.hero-news {
+    background-image: url('../../assets/imgs/plano-derecho.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
     padding: 50px;
     width: 100%;
     display: flex;
@@ -9,12 +13,12 @@
     margin-bottom: 20px;
 }
 
-.hero h2 {
+.hero-news  h2 {
     color: whitesmoke;
     font-size: 50px;
 }
 
-.hero p {
+.hero-news  p {
     color: rgb(219, 219, 219);
     font-size: 20px;
 }
@@ -93,6 +97,24 @@
 
 @media (max-width: 768px) {
     .activitys {
-        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    article {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .activitys {
+        gap: 30px;
+    }
+
+    article {
+        width: 100%;
     }
 }
