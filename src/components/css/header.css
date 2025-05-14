@@ -1,4 +1,8 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,6 +10,7 @@ header {
     background: #a00000;
     background: linear-gradient(90deg, rgba(160, 0, 0, 1) 0%, rgba(102, 0, 0, 1) 100%);
     border-bottom: 1px solid whitesmoke;
+    z-index: 100;
 }
 
 nav {
@@ -23,7 +28,7 @@ nav a {
 
 /* Efecto de interlineado */
 
-a::after {
+nav a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -36,7 +41,7 @@ a::after {
     transition: .3s;
 }
 
-a:hover::after {
+nav a:hover::after {
     transform: scaleX(1.1);
 }
 
@@ -75,20 +80,36 @@ a:hover::after {
     }
 
     .btn-menu span {
-        width: 30px;
-        height: 4px;
-        background-color: #333;
+        width: 25px;
+        height: 3px;
+        background-color: whitesmoke;
     }
 
     .menu {
-        background-color: #f2f2f2;
+        display: none;
+        height: 100vh;
+        background-color: whitesmoke;
         position: absolute;
-        top: 80px;
-        right: 0;
+        top: 90px;
+        left: 0;
         padding: 20px;
+        z-index: 100;
+        border-radius: 0 0 5px 0;
+        transform: translateX(-100%);
+    }
+
+    .menu-active {
         display: flex;
         flex-direction: column;
         gap: 25px;
+        animation: come-in 0.5s ease-in-out forwards;
+    }
+    
+    .menu-closing {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        animation: come-out 0.5s ease-in-out forwards;
     }
 
     .menu a {
@@ -100,5 +121,25 @@ a:hover::after {
 
     .menu a:hover {
         color: var(--primary-color);
+    }
+}
+
+@keyframes come-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes come-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }

@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/informatica" element={<Informa />} /> {/* los tontos */}
 
           <Route path="/biblioteca" element={<Library />} />
-          <Route path="/olimpiadas" element={<Olympics />} />
+          {/* <Route path="/olimpiadas" element={<Olympics />} /> */}
 
           {/* Las previas e intencificaciones estan en la misma seccion */}
           <Route path="/previas" element={<Previous />} />
