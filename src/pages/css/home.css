@@ -33,6 +33,7 @@
 }
 
 .buttons {
+    cursor: pointer;
     display: flex;
     justify-content: left;
     margin-top: 20px;
@@ -87,7 +88,7 @@
     transition: .4s;
 }
 .box h2{
-    font-size: 22px;
+    font-size: 20px;
 }
 .box p{
     color: rgb(140, 140, 140);

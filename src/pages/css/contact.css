@@ -19,7 +19,36 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secundary-color);
-    color: whitesmoke;
     padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    background-color: var(--secundary-color);   
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.contact-section h4 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.trans {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+}
+
+.transporte {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lineas {
+    display: flex;
+    flex-direction: column;
 }
