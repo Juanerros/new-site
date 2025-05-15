@@ -136,7 +136,7 @@
     transition: .3s;
 }
 .btn-tecnicaturas:hover {
-    opacity: 0.8;
+    filter: brightness(.8);
 }
 
 /* Responsive */

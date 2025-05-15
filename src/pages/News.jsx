@@ -17,7 +17,7 @@ export default function News() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus dolorem deserunt qui culpa, aspernatur, officia perspiciatis nesciunt reprehenderit explicabo porro accusantium. Reprehenderit sapiente incidunt asperiores saepe reiciendis modi a?
           </p>
           <div className="line"></div>
-          <a href="#">Ver actividades</a>
+          <a href="#"><span>Ver actividades</span></a>
         </article>
         <article>
           <h3>Actividades para vacaciones de invierno</h3>
@@ -25,7 +25,7 @@ export default function News() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus dolorem deserunt qui culpa, aspernatur, officia perspiciatis nesciunt reprehenderit explicabo porro accusantium. Reprehenderit sapiente incidunt asperiores saepe reiciendis modi a?
           </p>
           <div className="line"></div>
-          <a href="#">Ver actividades</a>
+          <a href="#"><span>Ver actividades</span></a>
         </article>
         <article>
           <h3>Actividades para demas</h3>
@@ -33,7 +33,7 @@ export default function News() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt delectus dolorem deserunt qui culpa, aspernatur, officia perspiciatis nesciunt reprehenderit explicabo porro accusantium. Reprehenderit sapiente incidunt asperiores saepe reiciendis modi a?
           </p>
           <div className="line"></div>
-          <a href="#">Ver actividades</a>
+          <a href="#"><span>Ver actividades</span></a>
         </article>
       </div>
 
@@ -41,7 +41,7 @@ export default function News() {
       <article className='conectar'>
         <h3>Solucion para bloqueo de netbooks</h3>
         <div className="line"></div>
-        <a href="#">Ver solucion</a>
+        <a href="#"><span>Ver solucion</span></a>
       </article>
     </>
   );
