@@ -15,20 +15,23 @@ export default function Contact() {
           <h2>¿Donde nos encontramos?</h2>
           <h4>Güemes 2051, B1842 Monte Grande, Provincia de Buenos Aires</h4>
         </div>
-        <h2>Transporte que te acercan a la técnica</h2>
-        <div className='trans'>
-          <div className='transporte'>
-            <FaBusAlt size={60} />
-            <div className='lineas'>
-              <h4>Líneas de colectivo</h4>
-              <li>501 - ramal 4.</li>
-              <li>501 - ramal 5.</li></div>
-           </div>
-          <div className='transporte'>
-            <FaTrainSubway size={60} />
-            <div className='lineas'>
-              <h4>Líneas de tren</h4> <br />
-              <li>Línea Roca, Tren Ezeiza.</li>
+        <div className='porte'>
+          <h2>Transporte que te acercan a la técnica</h2>
+
+          <div className='trans'>
+            <div className='transporte'>
+              <FaBusAlt size={60} />
+              <div className='lineas'>
+                <h4>Líneas de colectivo</h4>
+                <li>501 - ramal 4.</li>
+                <li>501 - ramal 5.</li></div>
+            </div>
+            <div className='transporte'>
+              <FaTrainSubway size={60} />
+              <div className='lineas'>
+                <h4>Líneas de tren</h4> <br />
+                <li>Línea Roca, Tren Ezeiza.</li>
+              </div>
             </div>
           </div>
         </div>
