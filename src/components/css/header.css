@@ -54,13 +54,19 @@ nav a:hover::after {
 }
 
 .logo h1 {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .logo img {
     height: 50px;
     border: 1px solid whitesmoke;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, .7));
+    transform: translateY(-2px);
 }
 
 .btn-menu,
@@ -107,7 +113,7 @@ nav a:hover::after {
         height: 100vh;
         background-color: whitesmoke;
         position: absolute;
-        top: 90px;
+        top: 110px;
         left: 0;
         padding: 20px;
         z-index: 100;

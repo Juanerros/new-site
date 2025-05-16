@@ -8,7 +8,7 @@ export default function News() {
         <h2>Novedades</h2>
         <p>Nuestras novedades</p>
       </Hero>
-      
+
       <h2 className='title'>Actividades</h2>
       <div className="activitys">
         <article>
@@ -43,6 +43,28 @@ export default function News() {
         <div className="line"></div>
         <a href="#"><span>Ver solucion</span></a>
       </article>
+
+      <h2 className='title'>Olimpiadas</h2>
+      <div className="olim">
+        <article className='conectar'>
+          <h3>Olimpiadas de Programacion</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, provident neque quibusdam voluptates, asperiores esse nihil, sapiente beatae nulla quisquam iusto tempora sit? Commodi ab necessitatibus, deleniti soluta libero ea.</p>
+          <div className="line"></div>
+          <a href="#"><span>Ver evento</span></a>
+        </article>
+        <article className='conectar'>
+          <h3>Olimpiadas de Programacion</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, provident neque quibusdam voluptates, asperiores esse nihil, sapiente beatae nulla quisquam iusto tempora sit? Commodi ab necessitatibus, deleniti soluta libero ea.</p>
+          <div className="line"></div>
+          <a href="#"><span>Ver evento</span></a>
+        </article>
+        <article className='conectar'>
+          <h3>Olimpiadas de Programacion</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, provident neque quibusdam voluptates, asperiores esse nihil, sapiente beatae nulla quisquam iusto tempora sit? Commodi ab necessitatibus, deleniti soluta libero ea.</p>
+          <div className="line"></div>
+          <a href="#"><span>Ver evento</span></a>
+        </article>
+      </div>
     </>
   );
 }

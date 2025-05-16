@@ -1,1 +1,11 @@
 /* Inscripción page styles */
+.gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('/imgs/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

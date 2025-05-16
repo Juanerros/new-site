@@ -1,5 +1,5 @@
 import './css/header.css'
-import Logo from './../assets/logo.png';
+import Logo from '/imgs/logo.png';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -29,7 +29,7 @@ export default function Header() {
 
     return (
         <header>
-            <Link to="/" className='logo'>
+            <Link to="/" className='logo' title='Ir a inicio'>
                 <img src={Logo} alt="Logo" />
                 <h1>EEST N°1</h1>
             </Link>
@@ -40,7 +40,6 @@ export default function Header() {
                 {/* quizas... en celu si o si. */}
                 <Link to="/cursos">Cursos</Link>
                 <Link to="/biblioteca">Biblioteca</Link>
-                {/* <Link to="/olimpiadas">Olimpiadas</Link> */}
                 <Link to="/previas">Previas</Link>
                 <Link to="/novedades">Novedades</Link>
                 <Link to="/contacto">Contacto</Link>
@@ -57,7 +56,6 @@ export default function Header() {
                 <Link onClick={toggleMenu} to="/">Inicio</Link>
                 <Link onClick={toggleMenu} to="/cursos">Cursos</Link>
                 <Link onClick={toggleMenu} to="/biblioteca">Biblioteca</Link>
-                {/* <Link onClick={toggleMenu} to="/olimpiadas">Olimpiadas</Link> */}
                 <Link onClick={toggleMenu} to="/previas">Previas</Link>
                 <Link onClick={toggleMenu} to="/novedades">Novedades</Link>
                 <Link onClick={toggleMenu} to="/contacto">Contacto</Link>
