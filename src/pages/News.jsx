@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 export default function News() {
   return (
     <>
-      <Hero imageUrl="../assets/imgs/plano-derecho.jpg">
+      <Hero imageUrl="/imgs/plano-derecho.jpg">
         <h2>Novedades</h2>
         <p>Nuestras novedades</p>
       </Hero>

@@ -16,11 +16,7 @@ export default function Home() {
             <input type="button" value="Inscribirse" />
             <input type="button" value="Conoce más" />
           </div>
-
         </div>
-
-        {/* Imagen generica de la escuela o proyecto tecnico */}
-        <img src="" alt="" />
       </div>
       <div className='section'>
         <div className='tecnicaturas'>

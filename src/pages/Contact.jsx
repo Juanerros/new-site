@@ -6,7 +6,7 @@ import { FaTrainSubway } from "react-icons/fa6";
 export default function Contact() {
   return (
     <>
-      <Hero imageUrl="../../assets/imgs/plano-derecho.jpg">
+      <Hero imageUrl="/imgs/plano-izquierdo.jpeg">
         <h2>Contactos</h2>
         <p>Nuestros contactos</p>
       </Hero>
