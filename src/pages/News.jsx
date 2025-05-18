@@ -37,13 +37,6 @@ export default function News() {
         </article>
       </div>
 
-      <h2 className='title'>Desbloqueo de netbook</h2>
-      <article className='conectar'>
-        <h3>Solucion para bloqueo de netbooks</h3>
-        <div className="line"></div>
-        <a href="#"><span>Ver solucion</span></a>
-      </article>
-
       <h2 className='title'>Olimpiadas</h2>
       <div className="olim">
         <article className='conectar'>
@@ -65,6 +58,13 @@ export default function News() {
           <a href="#"><span>Ver evento</span></a>
         </article>
       </div>
+
+      <h2 className='title'>Desbloqueo de netbook</h2>
+      <article className='conectar'>
+        <h3>Solucion para bloqueo de netbooks</h3>
+        <div className="line"></div>
+        <a href="#"><span>Ver solucion</span></a>
+      </article>
     </>
   );
 }

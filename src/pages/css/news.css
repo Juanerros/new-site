@@ -1,35 +1,38 @@
-.hero-news  h2 {
+.hero-news h2 {
     color: whitesmoke;
     font-size: 50px;
 }
 
-.hero-news  p {
+.hero-news p {
     color: rgb(219, 219, 219);
     font-size: 20px;
 }
 
 .olim {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px;
+
 }
 
 .olim article {
-    width: 30%;
+    width: 100% !important;
 }
+
 
 .activitys {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     margin-right: auto;
     margin-left: auto;
     margin: 20px;
 }
 
- article {
+article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -40,20 +43,20 @@
     transition: 0.3s;
 }
 
- article h3 {
+article h3 {
     min-height: 40px;
 }
 
- article:hover {
+article:hover {
     transform: translateY(-5px);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
- article p {
+article p {
     color: var(--font-light);
 }
 
- article a {
+article a {
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -112,24 +115,13 @@ article a:hover span {
     border-bottom: 2px solid var(--primary-color);
     padding: 0 10px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .conectar {
     margin-top: 10px;
     width: 50%;
 }
-
-@media (max-width: 1200px) {
-    .olim {
-        flex-direction: column;
-    }
-    
-    .olim article {
-        width: 70%;
-    }
-}
-
 
 @media (max-width: 768px) {
     .olim article {
@@ -146,6 +138,18 @@ article a:hover span {
 
     article {
         width: 80%;
+    }
+}
+
+@media (max-width: 980px) {
+    .activitys article:last-child {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+
+    .olim article:last-child {
+        grid-column: 1 / -1;
+        margin: 0 auto;
     }
 }
 
