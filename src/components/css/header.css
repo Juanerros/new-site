@@ -27,7 +27,7 @@ nav a {
 
 /* Efecto de interlineado */
 
-nav a::after {
+.hover::after {
     content: '';
     position: absolute;
     left: 0;
@@ -40,7 +40,7 @@ nav a::after {
     transition: .3s;
 }
 
-nav a:hover::after {
+.hover:hover::after {
     transform: scaleX(1.1);
 }
 
@@ -69,6 +69,11 @@ nav a:hover::after {
     transform: translateY(-2px);
 }
 
+.selected {
+    border-bottom: 2px solid whitesmoke;
+    padding: 0 3px;
+}
+
 .btn-menu,
 .menu {
     display: none;
@@ -95,7 +100,7 @@ nav a:hover::after {
     }
 
     .btn-menu-active span:nth-child(1) {
-        transform: rotate(45deg) translateY(6px) translateX(5px); 
+        transform: rotate(45deg) translateY(6px) translateX(5px);
     }
 
     .btn-menu-active span:nth-child(2) {
@@ -104,7 +109,7 @@ nav a:hover::after {
 
 
     .btn-menu-active span:nth-child(3) {
-        transform: rotate(-45deg) translateY(-6px) translateX(5px); 
+        transform: rotate(-45deg) translateY(-6px) translateX(5px);
     }
 
 
@@ -127,7 +132,7 @@ nav a:hover::after {
         gap: 25px;
         animation: come-in 0.5s ease-in-out forwards;
     }
-    
+
     .menu-closing {
         display: flex;
         flex-direction: column;
@@ -143,7 +148,12 @@ nav a:hover::after {
     }
 
     .menu a:hover {
-        color: var(--primary-color);
+        color: var(--primary-color) !important; 
+    }
+
+    .selected {
+        color: var(--primary-color) !important;
+        padding: 0 !important;
     }
 }
 

@@ -1,15 +1,16 @@
 import './css/header.css'
 import Logo from '/imgs/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
-    
+    const location = useLocation();
+
     const toggleMenu = () => {
         const menu = document.querySelector('.menu');
         const btnMenu = document.querySelector('.btn-menu');
-        
+
         if (!menuActive) {
             menu.classList.add('menu-active');
             btnMenu.classList.add('btn-menu-active');
@@ -34,16 +35,13 @@ export default function Header() {
                 <h1>EEST N°1</h1>
             </Link>
             <nav>
-                <Link to="/">Inicio</Link>
-
-                {/* Quizas podemos poner que sea un lista desplegable */}
-                {/* quizas... en celu si o si. */}
-                <Link to="/cursos">Cursos</Link>
-                <Link to="/biblioteca">Biblioteca</Link>
-                <Link to="/previas">Previas</Link>
-                <Link to="/novedades">Novedades</Link>
-                <Link to="/contacto">Contacto</Link>
-                <Link to="/inscripcion">Inscripción</Link>
+                <Link to="/" className={location.pathname === '/' ? 'selected' : 'hover'}>Inicio</Link>
+                <Link to="/cursos" className={location.pathname === '/cursos' ? 'selected' : 'hover'}>Cursos</Link>
+                <Link to="/biblioteca" className={location.pathname === '/biblioteca' ? 'selected' : 'hover'}>Biblioteca</Link>
+                <Link to="/previas" className={location.pathname === '/previas' ? 'selected' : 'hover'}>Previas</Link>
+                <Link to="/novedades" className={location.pathname === '/novedades' ? 'selected' : 'hover'}>Novedades</Link>
+                <Link to="/contacto" className={location.pathname === '/contacto' ? 'selected' : 'hover'}>Contacto</Link>
+                <Link to="/inscripcion" className={location.pathname === '/inscripcion' ? 'selected' : 'hover'}>Inscripción</Link>
             </nav>
 
             <div className='btn-menu' onClick={toggleMenu}>
@@ -53,13 +51,13 @@ export default function Header() {
             </div>
 
             <div className="menu">
-                <Link onClick={toggleMenu} to="/">Inicio</Link>
-                <Link onClick={toggleMenu} to="/cursos">Cursos</Link>
-                <Link onClick={toggleMenu} to="/biblioteca">Biblioteca</Link>
-                <Link onClick={toggleMenu} to="/previas">Previas</Link>
-                <Link onClick={toggleMenu} to="/novedades">Novedades</Link>
-                <Link onClick={toggleMenu} to="/contacto">Contacto</Link>
-                <Link onClick={toggleMenu} to="/inscripcion">Inscripción</Link>
+                <Link onClick={toggleMenu} to="/" className={location.pathname === '/' ? 'selected' : 'hover'}>Inicio</Link>
+                <Link onClick={toggleMenu} to="/cursos" className={location.pathname === '/cursos' ? 'selected' : 'hover'}>Cursos</Link>
+                <Link onClick={toggleMenu} to="/biblioteca" className={location.pathname === '/biblioteca' ? 'selected' : 'hover'}>Biblioteca</Link>
+                <Link onClick={toggleMenu} to="/previas" className={location.pathname === '/previas' ? 'selected' : 'hover'}>Previas</Link>
+                <Link onClick={toggleMenu} to="/novedades" className={location.pathname === '/novedades' ? 'selected' : 'hover'}>Novedades</Link>
+                <Link onClick={toggleMenu} to="/contacto" className={location.pathname === '/contacto' ? 'selected' : 'hover'}>Contacto</Link>
+                <Link onClick={toggleMenu} to="/inscripcion" className={location.pathname === '/inscripcion' ? 'selected' : 'hover'}>Inscripción</Link>
             </div>
         </header>
     )
