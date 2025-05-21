@@ -111,7 +111,7 @@
 }
 
 .btn-tecnicaturas {
-    cursor: pointer;
+    text-align: center;
     border-radius: 6px;
     background-color: var(--primary-color);
     color: whitesmoke;
@@ -120,7 +120,6 @@
     margin-top: 20px;
     padding: 10px;
     width: 100%;
-    border: none;
     transition: .3s;
 }
 

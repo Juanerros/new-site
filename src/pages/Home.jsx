@@ -34,7 +34,7 @@ export default function Home() {
               <h4><div className='icon'><IoIosArrowForward /></div>Dibujo tecnico y caligrafia</h4>
               <h4><div className='icon'><IoIosArrowForward /></div>Uso de madera y metales</h4>
             </div>
-            <input type="button" value="Cursos" className='btn-tecnicaturas' />
+            <Link className='btn-tecnicaturas' to={'/cursos'}>Ir a cursos</Link>
           </div>
           <div className='box'>
             <div className='title'>
@@ -48,7 +48,7 @@ export default function Home() {
               <h4><div className='icon'><IoIosArrowForward /></div>Bases de datos y SQL</h4>
               <h4><div className='icon'><IoIosArrowForward /></div>Desarrollo de aplicaciones moviles</h4>
             </div>
-            <input type="button" value="Cursos" className='btn-tecnicaturas' />
+            <Link className='btn-tecnicaturas' to={'/cursos'}>Ir a cursos</Link>
           </div>
           <div className='box'>
             <div className='title'>
@@ -62,7 +62,7 @@ export default function Home() {
               <h4><div className='icon'><IoIosArrowForward /></div>Virtualización y cloud computing</h4>
               <h4><div className='icon'><IoIosArrowForward /></div>Soporte técnico y mantenimiento</h4>
             </div>
-            <input type="button" value="Cursos" className='btn-tecnicaturas' />
+            <Link className='btn-tecnicaturas' to={'/cursos'}>Ir a cursos</Link>
           </div>
         </div>
       </div>
