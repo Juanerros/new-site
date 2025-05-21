@@ -3,21 +3,23 @@ import { FaCode } from "react-icons/fa6";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
 import { RiToolsFill } from "react-icons/ri";
+import Hero from '../components/Hero';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <>
-      <div className='about'>
+      <Hero imageUrl='/imgs/primer-plano.jpg'>
         <div className='text'>
-          <h1>Formando profesionales del futuro <br /></h1>
+          <h1>Formando profesionales del futuro</h1>
           <h2>Nuestra escuela ofrece formación técnica de calidad en las áreas más demandadas del mercado laboral. <br />
             Prepárate para el futuro con nuestras tecnicaturas en Programación e Informática.</h2>
           <div className='buttons'>
-            <input type="button" value="Inscribirse" />
-            <input type="button" value="Conoce más" />
+            <Link to={'/inscripcion'}>Inscribirse</Link>
+            <Link to={'/'} value="Conoce más">Conoce más</Link>
           </div>
         </div>
-      </div>
+      </Hero>
       <div className='section'>
         <div className='tecnicaturas'>
           <div className='box'>

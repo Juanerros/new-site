@@ -30,6 +30,26 @@
     font-size: 20px;
 }
 
+@media (max-width: 1200px) {
+    .hero {
+        padding: 40px;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 45px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    
+}
+
 @media (max-width: 768px) {
     .hero {
         padding: 30px;

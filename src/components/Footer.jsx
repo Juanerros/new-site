@@ -4,15 +4,16 @@ import { FiInstagram } from "react-icons/fi";
 import { LiaFacebookSquare } from "react-icons/lia";
 import { CgYoutube } from "react-icons/cg";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
         <>
             <footer >
-                <div className="logo">
+                <Link className="logo" to="/" title='Ir a inicio'> 
                     <img src={Logo} alt="Logo" />
                     <h2>Escuela de educación secundaria tecnica N°1</h2>
-                </div>
+                </Link>
                 <div className="redes">
                     <a href="https://www.instagram.com/tecnica1mg/?hl=es" target="_blank" rel="noopener noreferrer"><FiInstagram size={26} color='black'/></a>
                     <a href="https://www.facebook.com/people/Escuela-Secundaria-T%C3%A9cnica-N1-Esteban-Echeverria/100064875789538/" target="_blank" rel="noopener noreferrer"><LiaFacebookSquare size={32} color='black' /></a>

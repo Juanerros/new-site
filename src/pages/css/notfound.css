@@ -1,1 +1,13 @@
 /* 404 Not Found page styles */
+.btn-volver {
+    background-color: var(--secundary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+.btn-volver:hover {
+    transform: rotate(340deg);
+}
