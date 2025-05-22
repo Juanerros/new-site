@@ -10,6 +10,7 @@
     text-align: center;
     gap: 12px;
     margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .div-previas {
@@ -38,6 +39,9 @@
     border: 2px solid var(--secundary-color);
     padding: 8px;
     border-radius: 4px;
+}
+.previa .minimizar {
+    font-size: 20px;
 }
 
 .materias {
