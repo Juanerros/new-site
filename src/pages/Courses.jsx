@@ -23,24 +23,24 @@ export default function Courses() {
           <div className='turnos'>
             <div className='tm'>
               <p>Turno mañana</p>
-              <a href="">1°1</a>
-              <a href="">1°3</a>
-              <a href="">2°1</a>
-              <a href="">2°3</a>
-              <a href="">3°1</a>
-              <a href="">3°3</a>
+              <a href=""><span>1°1</span></a>
+              <a href=""><span>1°3</span></a>
+              <a href=""><span>2°1</span></a>
+              <a href=""><span>2°3</span></a>
+              <a href=""><span>3°1</span></a>
+              <a href=""><span>3°3</span></a>
             </div>
             <div className='tt'>
               <p>Turno Tarde</p>
-              <a href="">1°2</a>
-              <a href="">1°4</a>
-              <a href="">1°6</a>
-              <a href="">2°2</a>
-              <a href="">2°4</a>
-              <a href="">2°6</a>
-              <a href="">3°2</a>
-              <a href="">3°4</a>
-              <a href="">3°6</a>
+              <a href=""><span>1°2</span></a>
+              <a href=""><span>1°4</span></a>
+              <a href=""><span>1°6</span></a>
+              <a href=""><span>2°2</span></a>
+              <a href=""><span>2°4</span></a>
+              <a href=""><span>2°6</span></a>
+              <a href=""><span>3°2</span></a>
+              <a href=""><span>3°4</span></a>
+              <a href=""><span>3°6</span></a>
             </div>
           </div>
         </div>
@@ -50,15 +50,15 @@ export default function Courses() {
             <div className='turnos'>
               <div className='tm'>
                 <p>Turno mañana</p>
-                <a href="">4°3</a>
-                <a href="">5°3</a>
-                <a href="">6°3</a>
+                <a href=""><span>4°3</span></a>
+                <a href=""><span>5°3</span></a>
+                <a href=""><span>6°3</span></a>
               </div>
               <div className='tt'>
                 <p>Turno Tarde</p>
-                <a href="">4°4</a>
-                <a href="">5°4</a>
-                <a href="">7°2</a>
+                <a href=""><span>4°4</span></a>
+                <a href=""><span>5°4</span></a>
+                <a href=""><span>7°2</span></a>
               </div>
             </div>
           </div>
@@ -67,15 +67,15 @@ export default function Courses() {
             <div className='turnos'>
               <div className='tm'>
                 <p>Turno mañana</p>
-                <a href="">4°1</a>
-                <a href="">5°1</a>
-                <a href="">6°1</a>
-                <a href="">7°1</a>
+                <a href=""><span>4°1</span></a>
+                <a href=""><span>5°1</span></a>
+                <a href=""><span>6°1</span></a>
+                <a href=""><span>7°1</span></a>
               </div>
               <div className='tt'>
                 <p>Turno Tarde</p>
-                <a href="">4°2</a>
-                <a href="">5°2</a>
+                <a href=""><span>4°2</span></a>
+                <a href=""><span>5°2</span></a>
               </div>
             </div>
           </div>
