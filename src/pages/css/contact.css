@@ -20,34 +20,36 @@
 }
 
 .contact-section h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 600;
 }
 .contact-section h4 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .porte {
-    width: 100%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--secundary-color);
 }
 
 .porte h2 {
-    padding-left: 5px;
-    padding-right: 5px;
     font-size: 36px;
     font-weight: 600;
-    border-bottom: 3px solid var(--secundary-color);
+    margin-bottom: 20px;
 }
 
 .trans {
     display: flex;
     flex-direction: row;
-    gap: 10vh;
+    gap: 50px;
 }
 
 .transporte {
@@ -63,12 +65,9 @@
 }
 
 .img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    background: #fff;
     width: 100%;
+    text-align: center;
 }
 
 .img h2 {
@@ -76,11 +75,20 @@
     padding-right: 5px;
     font-size: 36px;
     font-weight: 600;
-    border-bottom: 3px solid var(--secundary-color);
 }
 
 .img img {
     max-height: 500px;
-    border: 1px solid var(--secundary-color);
     border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    .trans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img img {
+        max-height: 280px;
+    }
 }

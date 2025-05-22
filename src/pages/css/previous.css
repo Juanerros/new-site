@@ -1,16 +1,15 @@
 /* Previas page styles */
 
 .contenedor-previas {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     text-align: center;
-    gap: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    gap: 15px;
+    margin: 20px;
 }
 
 .div-previas {
@@ -20,17 +19,28 @@
     justify-content: center;
     align-items: center;
     background-color: var(--secundary-color);
+    gap: 10px;
     color: whitesmoke;
-    padding: 12px;
-    height: 100px;
+    padding: 30px;
 }
+
+.div-previas h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.div-previas p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .div-previas span {
-    text-decoration: underline;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .previa, .previa-edfisica {
-    height: 150px;
-    width: 250px;
+    min-height: 180px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,6 +50,21 @@
     padding: 8px;
     border-radius: 4px;
 }
+
+/* <a> de EdFisica */
+
+.previa-edfisica .materias {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.materias div {
+    display: flex;
+    gap: 5px;
+}
+
 .previa .minimizar {
     font-size: 20px;
 }
@@ -47,10 +72,12 @@
 .materias {
     width: 100%;
     height: 100%;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    gap: 8px;
 }
 .materias a{
     position: relative;
@@ -58,7 +85,7 @@
     z-index: 1;
     width: 100%;
     height: auto;
-    padding: 4px;
+    padding: 10px;
     text-decoration: none;
     background-color: var(--secundary-color);
     color: whitesmoke;
@@ -90,24 +117,17 @@
 .materias a:hover span {
     color: var(--secundary-color);
 }
-/* <a> de EdFisica */
 
-
-.previa-edfisica .materias {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.previa-edfisica .materias a{
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    width: 49%;
-    height: auto;
-    padding: 4px;
-    text-decoration: none;
-    background-color: var(--secundary-color);
-    color: whitesmoke;
-    border-radius: 4px;
-    transition: color .3s;
+@media (max-width: 600px) {
+    .contenedor-previas {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .previa, .previa-edfisica {
+        width: 70%;
+    }
+    .materias a{ 
+        width: 90%;
+    }
 }

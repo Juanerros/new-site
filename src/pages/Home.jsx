@@ -11,15 +11,19 @@ export default function Home() {
     <>
       <Hero imageUrl='/imgs/primer-plano.jpg'>
         <div className='text'>
-          <h1>Formando profesionales del futuro</h1>
-          <h2>Nuestra escuela ofrece formación técnica de calidad en las áreas más demandadas del mercado laboral. <br />
-            Prepárate para el futuro con nuestras tecnicaturas en Programación e Informática.</h2>
+          <h1>"Formando profesionales del futuro"</h1>
+          <h2>Animate a estudiar</h2>
           <div className='buttons'>
             <Link to={'/inscripcion'}>Inscribirse</Link>
             <Link to={'/'} value="Conoce más">Conoce más</Link>
           </div>
         </div>
       </Hero>
+      <div className="intro">
+        <p>Nuestra escuela ofrece formación técnica de calidad en las áreas más demandadas del mercado laboral. <br /> 
+        Prepárate para el futuro con nuestras tecnicaturas en Programación e Informática.</p>
+        <img src="/imgs/logo.png" alt="ilustracion" />
+      </div>
       <div className='section'>
         <div className='tecnicaturas'>
           <div className='box'>

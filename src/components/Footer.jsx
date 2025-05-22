@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
             </footer>
             <p className='copy'>&copy; {new Date().getFullYear()} Escuela de educación secundaria tecnica N°1. Todos los derechos reservados.</p>
-            <p>Desarrolada por Eze y Juan</p>
+            <p>Desarrolada por Ezepalo14 y Juan_XD</p>
         </>
     )
 }

@@ -1,5 +1,6 @@
 /* Home page styles */
 .text h1 {
+    font-style: italic;
     font-size: 40px;
     font-weight: 700;
 }
@@ -7,7 +8,6 @@
 .text h2 {
     font-size: 24px !important;
     font-weight: 300;
-
 }
 
 .buttons {
@@ -40,6 +40,29 @@
     flex-direction: row;
     gap: 20px;
     margin: 10px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.intro p {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--font-light);
+}
+
+.intro img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .tecnicaturas {
@@ -157,6 +180,14 @@
 @media (max-width: 640px) {
     .tecnicaturas {
         width: 80% !important;
+    }
+    .intro { 
+        gap: 40px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .intro p{
+        width: 90%;
     }
 }
 

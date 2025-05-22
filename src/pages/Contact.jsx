@@ -37,7 +37,6 @@ export default function Contact() {
         </div>
       </div>
       <div className="img">
-        <h2>Datos</h2>
         <img src="/imgs/contacto.jpg" alt="Contacto" />
       </div>
     </>
